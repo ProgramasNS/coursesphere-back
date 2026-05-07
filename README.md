@@ -101,6 +101,6 @@ Executing (default): PRAGMA INDEX_LIST(`Lessons`)
 <h2>Usuário de teste</h2>
 <p>Caso não queira criar um usuário manualmente, utilize estas credenciais:</p>
 <pre>
-Email: nicolas@sbo.com
-Senha: 123456
+email: nicolas@sbo.com
+password: 123456
 </pre>
