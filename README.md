@@ -51,12 +51,16 @@
   <p><code>cd nome_da_sua_pasta</code></p>
   <p>E depois: </p>
   <p><code>git clone https://github.com/ProgramasNS/Ensino.API</code></p>
-  <li>Instalando as dependências</li>
-  <p>Para instalar as dependências necessárias, digite o seguinte código no terminal: </p>
-  <p><code>npm install</code></p>
-  <li>Executando o módulo principal</li>
-  <p>Após instalar todas as dependências necessárias, digite: </p>
-  <p><code>node index.js</code></p>
+  <li>Usando o Docker</li>
+  <p>Caso tenha o Docker instalado, execute: </p>
+  <p><code>docker build -t nome_da_sua_pasta:latest .</code></p>
+  <p>Ou, caso esteja no Linux, execute: </p>
+  <p><code>sudo docker build -t nome_da_sua_pasta:latest .</code></p>
+  <p>E, para executar a aplicação, digite: </p>
+  <p><code>docker run coursesphere-back:latest
+</code> ou <code>sudo docker run coursesphere-back:latest
+</code></p>
+  
   <p>E, se funcionar, você receberá uma resposta parecida com essa: </p>
   <p><code>Servidor conectado com sucesso!
 Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Users';
