@@ -52,7 +52,8 @@ export const deleteCourse = async (req, res) => {
             return res.status(403).json({error: "Você não tem permissão para excluir este curso!"})
         }
         await course.destroy();
+        res.json({message: "Curso excluído com sucesso!"});
     } catch (err) {
         res.status(500).json({error: 'Erro ao excluir curso'});
     }
-}
+};

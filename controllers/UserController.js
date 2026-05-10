@@ -7,6 +7,12 @@ export const registerUser = async (req, res) => {
         if (!name || !email || !password) { //Caso um dos campos não seja preenchido
             return res.status(400).json({error: 'Todos os campos são obrigatórios!'});
         }
+        const verificaEmail = await User.findOne({
+            where: {email}
+        });
+        if (verificaEmail) {
+            return res.status(409).json({error: 'E-mail já existe no sistema!'});
+        }
         const hashPassword = await bcrypt.hash(password, 10);
         const novoUsuario = await User.create({name, email, password: hashPassword}); //Cadastro de novo usuário no banco de dados
         const {password: _, ...userData} = novoUsuario.toJSON();
@@ -22,6 +28,11 @@ export const loginUser = async (req, res) => {
         const user = await User.findOne({where: {email}}); //Procura pelo usuário no banco de dados
         if (!user) {
             return res.status(401).json({error: 'E-mail ou senha inválidos!'});
+        }
+        if (password.length < 8) {
+            return res.status(400).json({ 
+                error: 'A senha deve ter no mínimo 8 caracteres' 
+            });
         }
         const match = await bcrypt.compare(password, user.password);
         if (!match) {

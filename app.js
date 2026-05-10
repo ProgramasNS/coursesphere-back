@@ -4,9 +4,11 @@ import UserRoutes from './routes/UserRoutes.js';
 import LessonRoutes from './routes/LessonRoutes.js'
 import CourseRoutes from './routes/CourseRoutes.js'
 import dotenv from 'dotenv'; //Esse módulo serve para conectar o middleware à chave no arquivo env.
+import cors from 'cors';
 
 //Criação do app e uso dos módulos
 const app = express();
+app.use(cors());
 app.use(express.json())
 
 
