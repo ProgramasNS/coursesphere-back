@@ -1,4 +1,4 @@
-<h1>Projeto Ensino.API</h1>
+<h1>Projeto coursesphere-back</h1>
 <h2>O que é?</h2>
 <p>Trata-se de uma API Rest utilizada para o Projeto CourseSphere, uma plataforma de ensino fullstack.</p>
 <br>
