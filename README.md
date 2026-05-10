@@ -57,8 +57,8 @@
   <p>Ou, caso esteja no Linux, execute: </p>
   <p><code>sudo docker build -t nome_da_sua_pasta:latest .</code></p>
   <p>E, para executar a aplicação, digite: </p>
-  <p><code>docker run coursesphere-back:latest
-</code> ou <code>sudo docker run coursesphere-back:latest
+  <p><code>docker run -d -p 3000:3000 coursesphere-back
+</code> ou <code>sudo docker run -d -p 3000:3000 coursesphere-back
 </code></p>
   
   <p>E, se funcionar, você receberá uma resposta parecida com essa: </p>
