@@ -1,4 +1,4 @@
-<h1>Projeto Ensino.API</h1>
+<h1>Projeto coursesphere-back</h1>
 <h2>O que é?</h2>
 <p>Trata-se de uma API Rest utilizada para o Projeto CourseSphere, uma plataforma de ensino fullstack.</p>
 <br>
@@ -50,15 +50,14 @@
   <p>Primeiro, crie uma pasta em seu computador com o nome do repositório (ou um nome fácil de ser lembrado, conforme sua preferência) e vá para o terminal (cmd ou PowerShell): </p>
   <p><code>cd nome_da_sua_pasta</code></p>
   <p>E depois: </p>
-  <p><code>git clone https://github.com/ProgramasNS/Ensino.API</code></p>
+  <p><code>git clone https://github.com/ProgramasNS/coursesphere-back.git</code></p>
   <li>Usando o Docker</li>
   <p>Caso tenha o Docker instalado, execute: </p>
-  <p><code>docker build -t nome_da_sua_pasta:latest .</code></p>
+  <p><code>docker build -t coursesphere-back:latest .</code></p>
   <p>Ou, caso esteja no Linux, execute: </p>
-  <p><code>sudo docker build -t nome_da_sua_pasta:latest .</code></p>
+  <p><code>sudo docker build -t coursesphere-back:latest .</code></p>
   <p>E, para executar a aplicação, digite: </p>
-  <p><code>docker run coursesphere-back:latest
-</code> ou <code>sudo docker run coursesphere-back:latest
+  <p><code>node index.js
 </code></p>
   
   <p>E, se funcionar, você receberá uma resposta parecida com essa: </p>
