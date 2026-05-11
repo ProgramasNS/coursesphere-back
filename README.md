@@ -110,12 +110,12 @@ CORS_ORIGIN=http://localhost:5173</code></pre>
   </tr>
   <tr>
     <td>POST</td>
-    <td>/api/courses</td>
+    <td>/api/course</td>
     <td>Criar curso</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>/api/courses/list</td>
+    <td>/api/course/list</td>
     <td>Listar cursos do usuário</td>
   </tr>
 </table>
