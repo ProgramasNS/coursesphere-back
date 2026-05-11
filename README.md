@@ -73,6 +73,24 @@ Executing (default): PRAGMA INDEX_LIST(`Lessons`)
   <p>E a partir daí você poderá testar as APIs.
 </p>
 </ol>
+<h2>Como executar localmente (sem Docker)</h2>
+<ol>
+  <li>Clone o repositório e entre na pasta:
+    <pre><code>git clone https://github.com/ProgramasNS/coursesphere-back.git
+cd coursesphere-back</code></pre>
+  </li>
+  <li>Instale as dependências:
+    <pre><code>npm install</code></pre>
+  </li>
+  <li>Crie o arquivo <code>.env</code>:
+    <pre><code>JWT_SECRET=sua_chave_secreta_aqui
+CORS_ORIGIN=http://localhost:5173</code></pre>
+  </li>
+  <li>Execute o projeto:
+    <pre><code>npm start</code></pre>
+  </li>
+  <li>O servidor estará rodando em <code>http://localhost:3000</code></li>
+</ol>
 <h2>Endpoints da API</h2>
 <table border="1">
   <tr>
@@ -97,7 +115,7 @@ Executing (default): PRAGMA INDEX_LIST(`Lessons`)
   </tr>
   <tr>
     <td>GET</td>
-    <td>/courses/list</td>
+    <td>api/courses/list</td>
     <td>Listar cursos do usuário</td>
   </tr>
 </table>
