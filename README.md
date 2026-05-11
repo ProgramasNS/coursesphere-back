@@ -118,6 +118,41 @@ CORS_ORIGIN=http://localhost:5173</code></pre>
     <td>/api/course/list</td>
     <td>Listar cursos do usuário</td>
   </tr>
+   <tr>
+    <th>Método</th>
+    <th>Rota</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/course/:id</td>
+    <td>Atualizar curso</td>
+  </td>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/course/:id</td>
+    <td>Deletar curso</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/lesson/course/:courseId</td>
+    <td>Listar aulas de um curso</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/lesson/</td>
+    <td>Criar aula</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/lesson/:id</td>
+    <td>Atualizar aula</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/lesson/:id</td>
+    <td>Deletar aula</td>
+  </tr>
 </table>
 <h2>Usuário de teste</h2>
 <p>Caso não queira criar um usuário manualmente, utilize estas credenciais:</p>
