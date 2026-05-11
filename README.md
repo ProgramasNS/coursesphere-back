@@ -51,6 +51,7 @@
   <p><code>cd nome_da_sua_pasta</code></p>
   <p>E depois: </p>
   <p><code>git clone https://github.com/ProgramasNS/coursesphere-back.git</code></p>
+  <p>E depois <code>cd coursesphere-back</code></p>
   <li>Usando o Docker</li>
   <p>Caso tenha o Docker instalado, execute: </p>
   <p><code>docker build -t coursesphere-back:latest .</code></p>
