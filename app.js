@@ -1,25 +1,31 @@
-import express from 'express' //Módulo do Express
+import express from 'express';
 import sequelize from './config/db.js';
 import UserRoutes from './routes/UserRoutes.js';
-import LessonRoutes from './routes/LessonRoutes.js'
-import CourseRoutes from './routes/CourseRoutes.js'
-import dotenv from 'dotenv'; //Esse módulo serve para conectar o middleware à chave no arquivo env.
+import LessonRoutes from './routes/LessonRoutes.js';
+import CourseRoutes from './routes/CourseRoutes.js';
+import dotenv from 'dotenv';
 import cors from 'cors';
 
-//Criação do app e uso dos módulos
+dotenv.config();
+
 const app = express();
+
+const allowedOrigins = process.env.CORS_ORIGIN 
+    ? process.env.CORS_ORIGIN.split(',')
+    : ['http://localhost:5173', 'http://localhost:3000'];
+
 app.use(cors({
-    origin: 'http://localhost:5173',  
+    origin: allowedOrigins,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
-app.use(express.json())
 
+app.use(express.json());
 
-//Rotas
+// Rotas
 app.use('/api/user', UserRoutes);
 app.use('/api/course', CourseRoutes);
-app.use('/api/lesson', LessonRoutes)
+app.use('/api/lesson', LessonRoutes);
 
 sequelize.sync();
 
