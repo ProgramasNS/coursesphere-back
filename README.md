@@ -118,16 +118,11 @@ CORS_ORIGIN=http://localhost:5173</code></pre>
     <td>/api/course/list</td>
     <td>Listar cursos do usuário</td>
   </tr>
-   <tr>
-    <th>Método</th>
-    <th>Rota</th>
-    <th>Descrição</th>
-  </tr>
   <tr>
     <td>PUT</td>
     <td>/api/course/:id</td>
     <td>Atualizar curso</td>
-  </td>
+  </tr>
   <tr>
     <td>DELETE</td>
     <td>/api/course/:id</td>
