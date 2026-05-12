@@ -88,7 +88,7 @@ cd coursesphere-back</code></pre>
 CORS_ORIGIN=http://localhost:5173</code></pre>
   </li>
   <li>Execute o projeto:
-    <pre><code>npm start</code></pre>
+    <pre><code>node index.js</code></pre>
   </li>
   <li>O servidor estará rodando em <code>http://localhost:3000</code></li>
 </ol>
