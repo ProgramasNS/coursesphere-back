@@ -10,11 +10,11 @@ export const createLessons = async (req, res) => {
         const course = await Course.findByPk(course_id);
 
         if (!course) {
-            res.status(404).json("Curso não encontrado");
+           return res.status(404).json("Curso não encontrado");
         }
 
         if(course.creator_id !== req.user.id) {
-            res.status(403).json("Apenas o criador do curso pode adicionar aulas!");
+            return res.status(403).json("Apenas o criador do curso pode adicionar aulas!");
         }
     
         const lesson = await Lesson.create({
