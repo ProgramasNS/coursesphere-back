@@ -92,6 +92,8 @@ CORS_ORIGIN=http://localhost:5173</code></pre>
   </li>
   <li>O servidor estará rodando em <code>http://localhost:3000</code></li>
 </ol>
+<h2>Hospedagem do Servidor</h2>
+<p>O servidor do back-end atualmente está hospedado no Render, que pode ser acessando clicando <a href="https://coursesphere-back-host.onrender.com/">aqui</a>.</p>
 <h2>Endpoints da API</h2>
 <table border="1">
   <tr>
