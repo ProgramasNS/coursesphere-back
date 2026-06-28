@@ -1,5 +1,5 @@
 <h1>Projeto coursesphere-back</h1>
-<p>English version: <a href="./readme.en.md">click here</a></p>
+<p>English version: <a href="./README.en.md">click here</a></p>
 <h2>O que é?</h2>
 <p>Trata-se de uma API Rest utilizada para o Projeto CourseSphere, uma plataforma de ensino fullstack. Para o front-end, <a href="https://github.com/ProgramasNS/coursesphere-front">clique aqui</a>.</p>
 <br>
