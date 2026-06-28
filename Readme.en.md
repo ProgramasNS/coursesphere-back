@@ -57,7 +57,7 @@
   <p>Or, if you are on Linux, run:</p>
   <p><code>sudo docker build -t coursesphere-back:latest .</code></p>
   <p>And to run the application, type:</p>
-  <p><code>node index.js</code></p>
+  <p><code>docker run -p 3000:3000 coursesphere-back:latest</code></p>
   
   <p>If it works, you will receive a response similar to this:</p>
   <p><code>Server successfully connected!
