@@ -1,4 +1,5 @@
 <h1>Projeto coursesphere-back</h1>
+<p>English version: <a href="./readme.en.md">click here</a></p>
 <h2>O que é?</h2>
 <p>Trata-se de uma API Rest utilizada para o Projeto CourseSphere, uma plataforma de ensino fullstack. Para o front-end, <a href="https://github.com/ProgramasNS/coursesphere-front">clique aqui</a>.</p>
 <br>
@@ -8,7 +9,7 @@
   <li><strong>Sequelize:</strong> Framework principal para os CRUDs e a integração com o banco de dados.</li>
   <li><strong>SQLite:</strong> O Sistema de Gerenciamento de Banco de Dados (SGBD) utilizado, aliado ao Sequelize.</li>
   <li><strong>Bcrypt:</strong> Sistema robusto de criptografia utilizado nesta aplicação para a geração e proteção de senhas durante o cadastro.</li>
-  <li><strong>JSONWebTool (JWT):</strong> Sistema criptográfico para a geração do token do usuário administrador.</li>
+  <li><strong>JSON Web Token (JWT):</strong> Sistema criptográfico para a geração do token do usuário administrador.</li>
 </ul>
 <h2>As classes</h2>
     <ul>
@@ -58,7 +59,7 @@
   <p>Ou, caso esteja no Linux, execute: </p>
   <p><code>sudo docker build -t coursesphere-back:latest .</code></p>
   <p>E, para executar a aplicação, digite: </p>
-  <p><code>node index.js
+  <p><code>docker run -p 3000:3000 coursesphere-back:latest
 </code></p>
   
   <p>E, se funcionar, você receberá uma resposta parecida com essa: </p>
