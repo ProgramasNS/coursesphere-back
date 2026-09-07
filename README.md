@@ -1,3 +1,5 @@
+[![CI/CD](https://github.com/ProgramasNS/PostPoint/actions/workflows/ci.yml/badge.svg)](https://github.com/ProgramasNS/coursesphere-back/actions/workflows/ci.yml)
+<h1>Coursesphere-back Project</h1>
 <h1>Projeto coursesphere-back</h1>
 <p>English version: <a href="./README.en.md">click here</a></p>
 <h2>O que é?</h2>
