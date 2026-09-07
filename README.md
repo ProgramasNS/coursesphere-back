@@ -1,4 +1,4 @@
-[![CI/CD](https://github.com/ProgramasNS/PostPoint/actions/workflows/ci.yml/badge.svg)](https://github.com/ProgramasNS/coursesphere-back/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/ProgramasNS/PostPoint/actions/workflows/node.js.yml/badge.svg)](https://github.com/ProgramasNS/coursesphere-back/actions/workflows/node.js.yml)
 <h1>Projeto coursesphere-back</h1>
 <p>English version: <a href="./README.en.md">click here</a></p>
 <h2>O que é?</h2>
