@@ -1,3 +1,4 @@
+[![CI/CD](https://github.com/ProgramasNS/PostPoint/actions/workflows/ci.yml/badge.svg)](https://github.com/ProgramasNS/coursesphere-back/actions/workflows/ci.yml)
 <h1>Coursesphere-back Project</h1>
 <h2>What is it?</h2>
 <p>This is a Rest API used for the CourseSphere Project, a fullstack learning platform. For the front-end, <a href="https://github.com/ProgramasNS/coursesphere-front">click here</a>.</p>
